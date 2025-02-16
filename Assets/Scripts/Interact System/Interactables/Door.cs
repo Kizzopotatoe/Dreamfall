@@ -42,7 +42,5 @@ public class Door : MonoBehaviour, IInteractable
             isRotating = true;
             isOpen = !isOpen;
         }
-
-        Debug.Log("Interacting with: " + transform.name);
     }
 }

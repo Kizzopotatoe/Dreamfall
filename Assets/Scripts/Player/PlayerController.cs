@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Camera playerCamera;
 
     [Header("Speed")]
-    [SerializeField] private float playerSpeed = 5f;
+    [SerializeField] private float walkSpeed = 5f;
+    [SerializeField] private float sprintSpeed = 10f;
     [SerializeField] private float gravity = -20f;
     [SerializeField] private float jumpForce = 15f;
 
@@ -18,9 +19,9 @@ public class PlayerController : MonoBehaviour
 
     private CharacterController characterController;
     private GameInput gameInput;
-    private Vector3 moveDirection;
-    private Vector3 moveVelocity;
     private bool isJumping = false;
+    private bool isSprinting = false;
+    private float moveVelocityY = 0f;
 
     private void Awake()
     {
@@ -32,11 +33,28 @@ public class PlayerController : MonoBehaviour
         gameInput = GameInput.Instance;
 
         gameInput.OnJumpPerformed += GameInput_OnJumpPerformed;
+        gameInput.OnSprintPerformed += GameInput_OnSprintPerformed;
+        gameInput.OnSprintCanceled += GameInput_OnSprintCanceled;
+    }
+
+    // EVENTS FOR INPUT
+    private void GameInput_OnSprintCanceled(object sender, System.EventArgs e)
+    {
+        isSprinting = false;
+    }
+
+    private void GameInput_OnSprintPerformed(object sender, System.EventArgs e)
+    {
+        isSprinting = true;
     }
 
     private void GameInput_OnJumpPerformed(object sender, System.EventArgs e)
     {
-        
+        if(IsGrounded() && !isJumping)
+        {
+            moveVelocityY = jumpForce;
+            isJumping = true;
+        }
     }
 
     private void Update()
@@ -60,32 +78,31 @@ public class PlayerController : MonoBehaviour
         Vector3 cameraRight = playerCamera.transform.right;
         cameraRight.y = 0f;
 
-        moveDirection = cameraForward * move.z + cameraRight * move.x;
+        Vector3 moveDirection = cameraForward * move.z + cameraRight * move.x;
+
+        // Determine speed based on whether player is spritning or not
+        float currentSpeed = isSprinting ? sprintSpeed : walkSpeed;
 
         // Apply movement
-        characterController.Move(moveDirection * Time.deltaTime * playerSpeed);
+        characterController.Move(moveDirection * Time.deltaTime * currentSpeed);
     }
 
     private void PlayerJump()
     {
         if (IsGrounded())
         {
-            if (Input.GetButtonDown("Jump") && !isJumping)
-            {
-                moveVelocity.y = jumpForce;
-                isJumping = true;
-            }
-        }
-        else
-        {
-            if (isJumping && moveVelocity.y <= 0)
+            if(isJumping && moveVelocityY <= 0f)
             {
                 isJumping = false;
             }
         }
+        else
+        {
+            moveVelocityY += gravity * Time.deltaTime;
+        }
 
-        moveVelocity.y += gravity * Time.deltaTime;
-        characterController.Move(moveVelocity * Time.deltaTime);
+        Vector3 velocity = new Vector3(0f, moveVelocityY, 0f);
+        characterController.Move(velocity * Time.deltaTime);
     }
 
     private bool IsGrounded()

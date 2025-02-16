@@ -4,6 +4,8 @@ using UnityEngine;
 public class GameInput : MonoBehaviour
 {
     public event EventHandler OnJumpPerformed;
+    public event EventHandler OnSprintPerformed;
+    public event EventHandler OnSprintCanceled;
 
     public static GameInput Instance;
 
@@ -15,7 +17,19 @@ public class GameInput : MonoBehaviour
 
         playerControls = new PlayerControls();
 
-        playerControls.Player.Jump.started += Jump_performed;
+        playerControls.Player.Jump.performed += Jump_performed;
+        playerControls.Player.Sprint.performed += Sprint_performed;
+        playerControls.Player.Sprint.canceled += Sprint_canceled;
+    }
+
+    private void Sprint_canceled(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnSprintCanceled?.Invoke(this, EventArgs.Empty);
+    }
+
+    private void Sprint_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnSprintPerformed?.Invoke(this, EventArgs.Empty);
     }
 
     private void Jump_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)

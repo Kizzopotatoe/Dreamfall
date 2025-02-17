@@ -1,4 +1,4 @@
-using Unity.VisualScripting;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     private bool isJumping = false;
     private bool isSprinting = false;
     private float moveVelocityY = 0f;
+    public bool canMove = true;
 
     private void Awake()
     {
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        canMove = true;
         gameInput = GameInput.Instance;
 
         gameInput.OnJumpPerformed += GameInput_OnJumpPerformed;
@@ -59,11 +61,21 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        // Move
-        PlayerMove();
+        if(!canMove)
+        {
+            StartCoroutine(CanMove());
+            return;
+        }
+        
+        else
+        {
+            // Move
+            PlayerMove();
 
-        // Jump
-        PlayerJump();
+            // Jump
+            PlayerJump();
+        }
+        
     }
 
     private void PlayerMove()
@@ -111,4 +123,10 @@ public class PlayerController : MonoBehaviour
         return Physics.Raycast(groundCheck.position, Vector3.down, out hit, groundCheckRadius, groundLayer);
     }
 
+    IEnumerator CanMove()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        canMove = true;
+    }
 }

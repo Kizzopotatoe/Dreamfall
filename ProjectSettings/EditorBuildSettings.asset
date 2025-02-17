@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayerController.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Dream_1.unity
+    guid: 533a16d97f302e747aadb007e7d012f4
+  - enabled: 1
+    path: Assets/Scenes/Dream_2.unity
+    guid: cbd022901024bc747be65f7149304cbd
   m_configObjects: {}

@@ -1806,7 +1806,7 @@ GameObject:
   - component: {fileID: 1349929423}
   - component: {fileID: 1349929426}
   m_Layer: 0
-  m_Name: TestForInteraction Cube
+  m_Name: MoveTowards Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1820,14 +1820,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349929421}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.35791388, z: -0, w: 0.9337546}
-  m_LocalPosition: {x: -3.53, y: 0.02, z: 1.48}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.16, y: 1.6, z: 1.51}
   m_LocalScale: {x: 1.1844177, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 943798254}
   m_Father: {fileID: 1188753342}
-  m_LocalEulerAnglesHint: {x: 0, y: 41.944, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1349929423
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1843,7 +1843,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1869,7 +1869,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 17ab365a514c3c24ea7e2405e0940bee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1911,6 +1911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc0d4d33acef1964c8d8f7bb5d28d699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 15
 --- !u!1 &1386202348
 GameObject:
   m_ObjectHideFlags: 0

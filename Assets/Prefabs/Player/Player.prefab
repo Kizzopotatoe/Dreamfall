@@ -408,4 +408,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactSource: {fileID: 0}
-  interactRange: 5
+  interactRange: 20

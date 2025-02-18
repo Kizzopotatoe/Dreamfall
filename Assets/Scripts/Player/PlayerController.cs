@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance { get; private set; }
+
     [Header("Camera")]
     [SerializeField] private Camera playerCamera;
 
@@ -23,9 +25,12 @@ public class PlayerController : MonoBehaviour
     private bool isSprinting = false;
     private float moveVelocityY = 0f;
     public bool canMove = true;
+    private float initialGravity;
 
     private void Awake()
     {
+        Instance = this;
+
         characterController = GetComponent<CharacterController>();
     }
 
@@ -33,6 +38,7 @@ public class PlayerController : MonoBehaviour
     {
         canMove = true;
         gameInput = GameInput.Instance;
+        initialGravity = gravity;
 
         gameInput.OnJumpPerformed += GameInput_OnJumpPerformed;
         gameInput.OnSprintPerformed += GameInput_OnSprintPerformed;
@@ -128,5 +134,16 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
 
         canMove = true;
+    }
+
+    public void DisableGravity()
+    {
+        gravity = 0f;
+    }
+
+    public float EnableGravity()
+    {
+        gravity = initialGravity;
+        return gravity;
     }
 }

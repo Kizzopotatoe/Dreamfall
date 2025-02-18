@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
     {
         if(!canMove)
         {
-            StartCoroutine(CanMove());
+            //StartCoroutine(CanMove());
             return;
         }
         
@@ -136,9 +136,9 @@ public class PlayerController : MonoBehaviour
         canMove = true;
     }
 
-    public void DisableGravity()
+    public void DisableGravity(float gravityMultiplier)
     {
-        gravity = 0f;
+        gravity = gravityMultiplier;
     }
 
     public float EnableGravity()

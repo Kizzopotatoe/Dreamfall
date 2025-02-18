@@ -4,6 +4,7 @@ using UnityEngine;
 public class TestForInteraction : MonoBehaviour, IInteractable
 {
     [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float gravityFallTime = 1f;
 
     private PlayerController player;
 
@@ -15,7 +16,6 @@ public class TestForInteraction : MonoBehaviour, IInteractable
     public void Interact()
     {
         StartCoroutine(MoveToPosition(transform.position));
-        
     }
 
     private IEnumerator MoveToPosition(Vector3 targetPosition)
@@ -32,10 +32,14 @@ public class TestForInteraction : MonoBehaviour, IInteractable
                 );
             distance = Vector3.Distance(player.transform.position, targetPosition);
 
-            player.DisableGravity();
+            player.canMove = false;
+            player.DisableGravity(0f);
             yield return null;
         }
         player.transform.position = targetPosition;
+        yield return new WaitForSeconds(gravityFallTime);
+        player.canMove = true;
         player.EnableGravity();
     }
+
 }

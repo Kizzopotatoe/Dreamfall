@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
+using UnityEngine.SceneManagement;
 
 public class BedTimeline : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class BedTimeline : MonoBehaviour
     [SerializeField] private TimelineAsset bedTimeline_Awake;
 
     private PlayableDirector timeline;
-    private bool isAsleep = false;
+    //private bool isAsleep = false;
 
     private void Awake()
     {
@@ -24,20 +25,27 @@ public class BedTimeline : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (isAsleep)
-            {
-                timeline.Play(bedTimeline_Awake);
-                isAsleep = false;
-            }
-        }
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+            //if (isAsleep)
+            //{
+                //timeline.Play(bedTimeline_Awake);
+                //isAsleep = false;
+            //}
+        //}
     }
 
     private void Bed_OnBedAnimation(object sender, System.EventArgs e)
     {
         timeline.Play(bedTimeline_Sleep);
-        isAsleep = true;
+        //isAsleep = true;
+        StartCoroutine(Dream());
     }
 
+    IEnumerator Dream()
+    {
+        yield return new WaitForSeconds(6f);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }

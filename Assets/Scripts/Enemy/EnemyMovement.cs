@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -27,6 +28,14 @@ public class EnemyMovement : MonoBehaviour
                 agent.destination = target.position;
             }
             timer = maxTime;
+        }
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.TryGetComponent(out PlayerController player))
+        {
+            SceneManager.LoadScene(1);
         }
     }
 }

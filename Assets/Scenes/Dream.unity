@@ -2453,7 +2453,7 @@ PlayableDirector:
   m_GameObject: {fileID: 982606846}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: bb086ab0ab2389943a2fc1236b90b445, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: ff29520edff73ff47886cd0b48166530, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -2485,6 +2485,16 @@ PlayableDirector:
     value: {fileID: 371057507}
   - key: {fileID: 7470151636825720253, guid: 2c3937647b68c6244a3eb8f96145d778, type: 2}
     value: {fileID: 371057507}
+  - key: {fileID: -4427666485871779527, guid: bb086ab0ab2389943a2fc1236b90b445, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 8363790090633339321, guid: ff29520edff73ff47886cd0b48166530, type: 2}
+    value: {fileID: 689184414}
+  - key: {fileID: 7470151636825720253, guid: ff29520edff73ff47886cd0b48166530, type: 2}
+    value: {fileID: 371057507}
+  - key: {fileID: -3703118868331232849, guid: ff29520edff73ff47886cd0b48166530, type: 2}
+    value: {fileID: 689184419}
+  - key: {fileID: -1713110649407576295, guid: ff29520edff73ff47886cd0b48166530, type: 2}
+    value: {fileID: 3480297241163188460}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &987129276 stripped
@@ -5515,8 +5525,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144374579006469958}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.945, y: 0.6, z: -2.55}
+  m_LocalRotation: {x: 0.60644484, y: -0, z: 0, w: -0.7951256}
+  m_LocalPosition: {x: 1.5477757, y: 0.565, z: -1.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

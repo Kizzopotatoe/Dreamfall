@@ -42,7 +42,7 @@ public class MainMenuManager : MonoBehaviour
 
     private void PlayGame()
     {
-        SceneManager.LoadScene("Bedroom");
+        SceneManager.LoadScene("Dream");
     }
 
     private void ExitGame()

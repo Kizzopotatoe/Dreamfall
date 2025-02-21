@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1977517962220081900}
   - component: {fileID: 4213508904087710507}
   m_Layer: 0
-  m_Name: MoveTowards Cube
+  m_Name: Anchor Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

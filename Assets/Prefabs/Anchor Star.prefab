@@ -120,3 +120,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 15
   gravityFallTime: 0.1
+  anchorForce: 7

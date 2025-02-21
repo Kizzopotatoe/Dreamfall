@@ -4,7 +4,7 @@ public class HotelDoors : MonoBehaviour, IInteractable
 {
     public void Interact()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(3);
     }
 
 }

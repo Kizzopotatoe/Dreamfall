@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Pitfall : MonoBehaviour
+public class Goal : MonoBehaviour
 {
     public Score score;
 
@@ -14,7 +14,7 @@ public class Pitfall : MonoBehaviour
     {
         if(other.gameObject.TryGetComponent(out PlayerController player))
         {
-            score.Death();
+            score.morning = true;
 
             SceneManager.LoadScene(1);
         }

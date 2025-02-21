@@ -3421,6 +3421,52 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510913832}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &514699037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 514699039}
+  - component: {fileID: 514699038}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &514699038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514699037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2630b3e4ece1734cbc8b6abe926b504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deaths: 0
+  morning: 0
+--- !u!4 &514699039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514699037}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.25276136, y: -0.8477881, z: 1.0304732}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519488618
 GameObject:
   m_ObjectHideFlags: 0
@@ -4405,6 +4451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38fc9ea189bcbe940bb39d000e258291, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 0}
 --- !u!64 &686203197
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16129,6 +16176,7 @@ GameObject:
   - component: {fileID: 583876503580192113}
   - component: {fileID: 6786043706390292723}
   - component: {fileID: 4213508903988385370}
+  - component: {fileID: 6786043706390292725}
   - component: {fileID: 6786043706390292724}
   m_Layer: 0
   m_Name: THE SUN
@@ -16244,6 +16292,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.49999997
   m_Center: {x: -0.0000000088475645, y: 0, z: -0.00000023841858}
+--- !u!114 &6786043706390292725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5203446112163156596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58b173d35e017ed47848f26c6c2e91c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 0}
 --- !u!114 &7727357026479514696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16379,3 +16440,4 @@ SceneRoots:
   - {fileID: 1205766205}
   - {fileID: 2131178773}
   - {fileID: 1108587316}
+  - {fileID: 514699039}

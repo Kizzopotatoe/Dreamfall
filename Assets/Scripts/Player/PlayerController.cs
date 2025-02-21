@@ -146,4 +146,9 @@ public class PlayerController : MonoBehaviour
         gravity = initialGravity;
         return gravity;
     }
+
+    public void AddForce(Vector3 force)
+    {
+        moveVelocityY = force.y;
+    }
 }

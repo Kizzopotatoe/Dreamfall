@@ -1,10 +1,11 @@
 using System.Collections;
 using UnityEngine;
 
-public class TestForInteraction : MonoBehaviour, IInteractable
+public class Anchor : MonoBehaviour, IInteractable
 {
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float gravityFallTime = 1f;
+    [SerializeField] private float gravityFallTime = 0.1f;
+    [SerializeField] private float anchorForce = 10f;
 
     private PlayerController player;
 
@@ -40,6 +41,7 @@ public class TestForInteraction : MonoBehaviour, IInteractable
         yield return new WaitForSeconds(gravityFallTime);
         player.canMove = true;
         player.EnableGravity();
+        player.AddForce(new Vector3(0f, anchorForce, 0f));
     }
 
 }

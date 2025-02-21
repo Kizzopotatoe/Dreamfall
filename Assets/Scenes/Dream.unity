@@ -613,6 +613,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoveTowards Cube (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -680,6 +685,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -754,6 +764,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoveTowards Cube (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1035,6 +1050,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoveTowards Cube (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1186,6 +1206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1451,6 +1476,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1945,6 +1975,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2555,6 +2590,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoveTowards Cube (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3110,6 +3150,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anchor Star (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3658,6 +3703,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anchor Star (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3960,6 +4010,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoveTowards Cube (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4243,6 +4298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4899,6 +4959,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6440,6 +6505,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anchor Star (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6612,6 +6682,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7113,6 +7188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anchor Star (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7289,6 +7369,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoveTowards Cube (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8236,6 +8321,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anchor Star (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8315,6 +8405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoveTowards Cube (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8452,6 +8547,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anchor Star (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8525,6 +8625,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9253,6 +9358,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anchor Star (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9326,6 +9436,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoveTowards Cube (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9605,6 +9720,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoveTowards Cube (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9672,6 +9792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9950,6 +10075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10425,6 +10555,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11115,6 +11250,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anchor Star (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11294,6 +11434,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoveTowards Cube (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11361,6 +11506,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11435,6 +11585,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12050,6 +12205,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoveTowards Cube (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12222,6 +12382,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoveTowards Cube (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12397,6 +12562,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anchor Star (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12549,6 +12719,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13040,6 +13215,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13616,6 +13796,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MoveTowards Cube (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13690,6 +13875,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anchor Star (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13758,6 +13948,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anchor Star (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13825,6 +14020,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Anchor Star (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14862,6 +15062,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anchor Star (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14935,6 +15140,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MoveTowards Cube (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203446112197078789, guid: 2b865f8bf97b55848b41fbecbffa9a97,
+        type: 3}
+      propertyPath: m_TagString
+      value: Anchor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

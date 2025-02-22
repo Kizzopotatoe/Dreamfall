@@ -21,7 +21,7 @@ public class SpaceWhale : MonoBehaviour
 
         if (Vector3.Distance(transform.position, target[targetNumber].position) < 0.001f)
         {
-            if(targetNumber == 8) return;
+            if(targetNumber == 8) Destroy(this.gameObject);
             targetNumber++;
         }
     }

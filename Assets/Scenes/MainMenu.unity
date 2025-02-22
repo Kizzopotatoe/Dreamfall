@@ -478,7 +478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &47551821
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3394,10 +3394,6 @@ MonoBehaviour:
   optionsMenuPanel: {fileID: 2058315429}
   audioSettingsMenu: {fileID: 812572573}
   confirmationPrompt: {fileID: 1184222570}
-  playButton: {fileID: 1259505908}
-  optionsButton: {fileID: 1724225994}
-  exitButton: {fileID: 632050793}
-  backButton: {fileID: 1288440337}
   audioMixer: {fileID: 24100000, guid: 3eeaa456015a6424e977f6c7b04a1e5b, type: 2}
   musicVolumeTextValue: {fileID: 1100193270}
   sfxVolumeTextValue: {fileID: 47551822}
@@ -7276,7 +7272,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 632050794}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 340590044}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &632050794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8237,7 +8245,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 792032573}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1272283172}
+        m_TargetAssemblyTypeName: PauseMenuManager, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &805750090
 GameObject:
   m_ObjectHideFlags: 0
@@ -8443,7 +8463,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 812622798}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &812622798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11288,7 +11320,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1077441340}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 340590044}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: OptionsButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1082043957
 GameObject:
   m_ObjectHideFlags: 0
@@ -11546,7 +11590,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1100193269
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13803,7 +13847,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1259505909}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 340590044}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1259505909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14020,6 +14076,7 @@ GameObject:
   - component: {fileID: 1272283169}
   - component: {fileID: 1272283168}
   - component: {fileID: 1272283167}
+  - component: {fileID: 1272283172}
   m_Layer: 5
   m_Name: PauseMenuManager CANVAS
   m_TagString: Untagged
@@ -14043,10 +14100,6 @@ MonoBehaviour:
   optionsMenuPanel: {fileID: 1002478313}
   audioSettingsMenu: {fileID: 817335923}
   confirmationPrompt: {fileID: 932031768}
-  playButton: {fileID: 792032575}
-  optionsButton: {fileID: 1077441342}
-  exitButton: {fileID: 812622797}
-  backButton: {fileID: 1720301456}
   audioMixer: {fileID: 24100000, guid: 3eeaa456015a6424e977f6c7b04a1e5b, type: 2}
   musicVolumeTextValue: {fileID: 863944136}
   sfxVolumeTextValue: {fileID: 1173843398}
@@ -14143,6 +14196,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1272283172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272283166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10422670cbb68ee42b18e1c6cc5ff4ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuPanel: {fileID: 1644107236}
 --- !u!1 &1288440335
 GameObject:
   m_ObjectHideFlags: 0
@@ -14224,7 +14290,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1288440338}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2058315429}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2145211883}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1288440338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18281,7 +18371,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1720301457}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1002478313}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1644107236}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1720301457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18615,7 +18729,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1724225995}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 340590044}
+        m_TargetAssemblyTypeName: MainMenuManager, Assembly-CSharp
+        m_MethodName: OptionsButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1724225995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22104,7 +22230,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280756644
+    rgba: 4288292772
   m_fontColor: {r: 0.6431373, g: 0.15294118, b: 0.6039216, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3

@@ -1,23 +1,23 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {
+    public static MainMenuManager Instance { get; private set; }
+
+    public event EventHandler OnChangeSensitivity;
+
     [Header("Menus")]
     [SerializeField] private GameObject mainMenuPanel;
     [SerializeField] private GameObject optionsMenuPanel;
     [SerializeField] private GameObject audioSettingsMenu;
     [SerializeField] private GameObject confirmationPrompt;
-
-    [Header("Main Menu Buttons")]
-    [SerializeField] private Button playButton;
-    [SerializeField] private Button optionsButton;
-    [SerializeField] private Button exitButton;
-    [SerializeField] private Button backButton;
 
     [Header("Volume Settings")]
     [SerializeField] private AudioMixer audioMixer;
@@ -34,13 +34,13 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private int defaultSensitivity = 4;
     public int mainControllerSensitivity = 4;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     private void Start()
     {
-        playButton.onClick.AddListener(PlayGame);
-        exitButton.onClick.AddListener(ExitGame);
-        optionsButton.onClick.AddListener(OptionsButton);
-        backButton.onClick.AddListener(BackButton);
-
         mainMenuPanel.SetActive(true);
         optionsMenuPanel.SetActive(false);
 
@@ -50,28 +50,23 @@ public class MainMenuManager : MonoBehaviour
         // Apply saved values
         audioMixer.SetFloat("Music", savedMusicVolume);
         audioMixer.SetFloat("SFX", savedSFXVolume);
+
     }
 
-    private void PlayGame()
+    public void PlayGame()
     {
         SceneManager.LoadScene("Dream");
     }
 
-    private void ExitGame()
+    public void ExitGame()
     {
         Application.Quit();
     }
 
-    private void OptionsButton()
+    public void OptionsButton()
     {
         mainMenuPanel.SetActive(false);
         optionsMenuPanel.SetActive(true);
-    }
-
-    private void BackButton()
-    {
-        optionsMenuPanel.SetActive(false);
-        mainMenuPanel.SetActive(true);
     }
 
     public void SoundButton()
@@ -110,12 +105,16 @@ public class MainMenuManager : MonoBehaviour
     {
         mainControllerSensitivity = Mathf.RoundToInt(sensitivity);
         controllerSensitivityTextValue.text = sensitivity.ToString("0");
+
+        OnChangeSensitivity?.Invoke(this, EventArgs.Empty);
     }
 
     public void GameplayApply()
     {
         PlayerPrefs.SetFloat("masterSensitivity", mainControllerSensitivity);
         StartCoroutine(ConfirmationBox());
+
+        OnChangeSensitivity?.Invoke(this, EventArgs.Empty);
     }
 
     public void ResetButton(string menuType)

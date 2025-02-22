@@ -301,9 +301,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7985869634922181519, guid: 3eeaa456015a6424e977f6c7b04a1e5b,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cd257bef57bb6794c9e008623b02e562, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2128,7 +2128,6 @@ GameObject:
   m_Component:
   - component: {fileID: 520759170}
   - component: {fileID: 520759172}
-  - component: {fileID: 520759171}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -2152,19 +2151,6 @@ Transform:
   - {fileID: 484996062}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &520759171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520759169}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4239f05a68edb954b98f8eac154dea22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: {fileID: 0}
 --- !u!65 &520759172
 BoxCollider:
   m_ObjectHideFlags: 0

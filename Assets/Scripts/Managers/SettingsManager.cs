@@ -6,7 +6,7 @@ public class SettingsManager : MonoBehaviour
     {
         if(PlayerController.Instance != null)
         {
-            PlayerController.Instance.GetComponentInChildren<CameraController>().mouseSensitivity = PlayerPrefs.GetFloat("masterSensitivity");
+            PlayerController.Instance.GetComponentInChildren<CameraController>().mouseSensitivity = PlayerPrefs.GetFloat("masterSensitivity", 5f);
         }
 
         MainMenuManager.Instance.OnChangeSensitivity += Instance_OnChangeSensitivity;
@@ -15,5 +15,10 @@ public class SettingsManager : MonoBehaviour
     private void Instance_OnChangeSensitivity(object sender, System.EventArgs e)
     {
         PlayerController.Instance.GetComponentInChildren<CameraController>().mouseSensitivity = PlayerPrefs.GetFloat("masterSensitivity");
+    }
+
+    private void Update()
+    {
+        
     }
 }

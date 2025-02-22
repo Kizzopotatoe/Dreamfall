@@ -7,6 +7,8 @@ public class Door : MonoBehaviour, IInteractable
     private Quaternion targetRotation;
     private bool isRotating = false;
     private bool isOpen = false;
+    public AudioSource source;
+    public AudioClip clip;
 
     private void Start()
     {
@@ -41,6 +43,8 @@ public class Door : MonoBehaviour, IInteractable
 
             isRotating = true;
             isOpen = !isOpen;
+
+            source.PlayOneShot(clip);
         }
     }
 }

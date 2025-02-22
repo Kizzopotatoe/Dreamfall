@@ -7,6 +7,9 @@ public class Anchor : MonoBehaviour, IInteractable
     [SerializeField] private float gravityFallTime = 0.1f;
     [SerializeField] private float anchorForce = 10f;
 
+    public AudioSource source;
+    public AudioClip clip;
+
     private PlayerController player;
 
     private void Start()
@@ -17,6 +20,7 @@ public class Anchor : MonoBehaviour, IInteractable
     public void Interact()
     {
         StartCoroutine(MoveToPosition(transform.position));
+        source.PlayOneShot(clip);
     }
 
     private IEnumerator MoveToPosition(Vector3 targetPosition)

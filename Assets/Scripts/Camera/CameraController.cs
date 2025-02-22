@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private Transform player;
-    [SerializeField] private float mouseSensitivity = 2f;
+    public float mouseSensitivity = 2;
 
     private float cameraVerticalRotation = 0f;
 

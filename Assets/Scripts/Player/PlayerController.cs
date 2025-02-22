@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundCheckRadius;
 
     private CharacterController characterController;
+    private CameraController cameraController;
     private GameInput gameInput;
     private bool isJumping = false;
     private bool isSprinting = false;

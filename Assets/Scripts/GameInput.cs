@@ -6,6 +6,7 @@ public class GameInput : MonoBehaviour
     public event EventHandler OnJumpPerformed;
     public event EventHandler OnSprintPerformed;
     public event EventHandler OnSprintCanceled;
+    public event EventHandler OnPausePerformed;
 
     public static GameInput Instance;
 
@@ -20,6 +21,22 @@ public class GameInput : MonoBehaviour
         playerControls.Player.Jump.performed += Jump_performed;
         playerControls.Player.Sprint.performed += Sprint_performed;
         playerControls.Player.Sprint.canceled += Sprint_canceled;
+        playerControls.Player.Pause.performed += Pause_performed;
+    }
+
+    private void OnDestroy()
+    {
+        playerControls.Player.Jump.performed -= Jump_performed;
+        playerControls.Player.Sprint.performed -= Sprint_performed;
+        playerControls.Player.Sprint.canceled -= Sprint_canceled;
+        playerControls.Player.Pause.performed -= Pause_performed;
+
+        playerControls.Dispose();
+    }
+
+    private void Pause_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    {
+        OnPausePerformed?.Invoke(this, EventArgs.Empty);
     }
 
     private void Sprint_canceled(UnityEngine.InputSystem.InputAction.CallbackContext obj)

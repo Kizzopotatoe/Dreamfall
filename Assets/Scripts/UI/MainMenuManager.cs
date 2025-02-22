@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -19,9 +20,13 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Button backButton;
 
     [Header("Volume Settings")]
-    [SerializeField] private TextMeshProUGUI volumeTextValue;
+    [SerializeField] private AudioMixer audioMixer;
+    [SerializeField] private TextMeshProUGUI musicVolumeTextValue;
+    [SerializeField] private TextMeshProUGUI sfxVolumeTextValue;
     [SerializeField] private Slider volumeSlider;
     [SerializeField] private float defaultVolume = 1f;
+    private float musicVolume;
+    private float sfxVolume;
 
     [Header("Gameplay Settings")]
     [SerializeField] private TextMeshProUGUI controllerSensitivityTextValue;
@@ -38,6 +43,13 @@ public class MainMenuManager : MonoBehaviour
 
         mainMenuPanel.SetActive(true);
         optionsMenuPanel.SetActive(false);
+
+        // Save Music + SFX Volume
+        float savedMusicVolume = PlayerPrefs.GetFloat("musicVolume", defaultVolume);
+        float savedSFXVolume = PlayerPrefs.GetFloat("sfxVolume", defaultVolume);
+        // Apply saved values
+        audioMixer.SetFloat("Music", savedMusicVolume);
+        audioMixer.SetFloat("SFX", savedSFXVolume);
     }
 
     private void PlayGame()
@@ -70,14 +82,27 @@ public class MainMenuManager : MonoBehaviour
 
     public void SetVolume(float volume)
     {
-        // Temp
-        AudioListener.volume = volume;
-        volumeTextValue.text = volume.ToString("0.0");
+        musicVolume = Mathf.Log10(volume) * 20f;
+        audioMixer.SetFloat("Music", musicVolume);
+
+        musicVolumeTextValue.text = volume.ToString("0.0");
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        sfxVolume = Mathf.Log10(volume) * 20f;
+        audioMixer.SetFloat("SFX", sfxVolume);
+
+        sfxVolumeTextValue.text = volume.ToString("0.0");
     }
 
     public void VolumeApply()
     {
+        PlayerPrefs.SetFloat("musicVolume", musicVolume);
+        PlayerPrefs.SetFloat("sfxVolume", sfxVolume);
+
         PlayerPrefs.SetFloat("masterVolume", AudioListener.volume);
+
         StartCoroutine(ConfirmationBox());
     }
 
@@ -99,7 +124,7 @@ public class MainMenuManager : MonoBehaviour
         {
             AudioListener.volume = defaultVolume;
             volumeSlider.value = defaultVolume;
-            volumeTextValue.text = defaultVolume.ToString("0.0");
+            musicVolumeTextValue.text = defaultVolume.ToString("0.0");
             VolumeApply();
         }
 
